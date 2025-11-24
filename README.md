@@ -1,1 +1,1 @@
-# This is a window into my 40 days Python Training in EY
+# This is a window into my 40 days of Python Training in EY
