@@ -184,4 +184,5 @@ fruits.pop()
 print(fruits)   Output: ["apple","banana"]
 
 del.fruits[0]
-print(fruits)   Output: ["banana"]
+
+print(fruits)   Output: ["banana"]"""
