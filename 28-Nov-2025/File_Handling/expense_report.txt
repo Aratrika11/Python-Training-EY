@@ -1,0 +1,5 @@
+Expense Report
+Food: Rs 200
+Clothes: Rs 800
+Travel: Rs 500
+Total: 1500
