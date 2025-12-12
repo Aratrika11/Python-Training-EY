@@ -1,0 +1,33 @@
+{% extends "tasks/base.html" %}
+{% block content %}
+<h2>All Tasks</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Created</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+<tbody>
+    {% for task in tasks %}
+    <tr>
+        <td>{{ task.title }}</td>
+        <td>{{ task.description|default:"—" }}</td>
+        <td>
+            {% if task.status == "Pending" %}
+                <span class="badge badge-warning">Pending</span>
+            {% else %}
+                <span class="badge badge-success">Completed</span>
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</tbody>
+
+</table>
+{% endblock %}
